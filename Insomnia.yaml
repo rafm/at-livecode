@@ -1,0 +1,163 @@
+_type: export
+__export_format: 4
+__export_date: 2024-03-01T17:31:56.474Z
+__export_source: insomnia.desktop.app:v2023.4.0
+resources:
+  - _id: req_8519c0394f0c4047bda004eaa1c6e5a0
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709311505972
+    created: 1709311382867
+    url: "{{ _.baseUrl }}/"
+    name: All persons
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1709311382868
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_40a82c46ad684cebbe91a98adb5762ea
+    parentId: null
+    modified: 1709302246339
+    created: 1709302246339
+    name: Arctouch live code - Java
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_2ba1a0e16f2f40e58f0a5cb9849273a9
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709314222394
+    created: 1709311456204
+    url: "{{ _.baseUrl }}/76835417706"
+    name: By CPF
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_a2b3b3b1dafe4c238190387ba5561a99
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - id: pair_893b7f013ee24302998d32d93a05cd31
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1709311382818
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1f3ca8e1d2764c78a70c61c0a7a34e44
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709314133448
+    created: 1709311541294
+    url: "{{ _.baseUrl }}/"
+    name: Create person
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cpf": "768.354.177-06",
+        	"name" :"Pedro"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1709311382768
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5e02ce1d732940d591cf0368fc2333ae
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709314170597
+    created: 1709311599675
+    url: "{{ _.baseUrl }}/76835417706"
+    name: Update person
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cpf": "717.100.786-34",
+        	"name": "João"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1709311382718
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ddaca576d6f149ccb5a5d17ee3fb0c30
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709314246671
+    created: 1709312143898
+    url: "{{ _.baseUrl }}/71710078634"
+    name: Remove person
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1709311382668
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_edb496977959482a04c7563dd183840cc72b9b54
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709311499520
+    created: 1709302246342
+    name: Base Environment
+    data:
+      baseUrl: http://localhost:8080
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1709302246342
+    _type: environment
+  - _id: jar_edb496977959482a04c7563dd183840cc72b9b54
+    parentId: wrk_40a82c46ad684cebbe91a98adb5762ea
+    modified: 1709302246344
+    created: 1709302246344
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
